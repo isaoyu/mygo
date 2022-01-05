@@ -1,0 +1,16 @@
+version: '3'
+services:
+  # golang
+  golang:
+    image: golang:latest
+    hostname: golang
+    container_name: golang
+    restart: always
+    privileged: true
+    ports:
+      - '8088:8088'
+    volumes:
+      - E:\go:/go
+    tty: true
+
+
